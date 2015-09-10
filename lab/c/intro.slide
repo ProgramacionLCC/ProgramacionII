@@ -1,0 +1,202 @@
+Programación 2
+Laboratorio
+21 Aug 2015
+Tags: c, shell
+
+* Editores de texto 
+
+- gEdit
+- emacs
+- vim
+- sublimetext
+- nano
+
+ 
+* Primer ejemplo
+
+.code ejemplos/hello1.c
+
+Como compilarlo?
+
+     $ cc ex0.c -o ex0
+
+Como ejecutarlo?
+
+     $ ./ex0
+     Hola mundo!
+ 
+* Segundo ejemplo
+
+.code ejemplos/hello2.c
+
+* Tabla de convesión
+
+  Fahrenheit      Celsius
+     0              -17
+     20             -6
+     40             4
+     60             15
+     80             26
+     100            37 
+     120            48
+     140            60
+     160            71
+     180            82
+     200            93
+     220            104
+     240            115
+     260            126
+     280            137
+     300            148
+
+
+
+* While
+
+.code ejemplos/farh2cel.c /^int main/,/^}/
+
+* While(2)
+
+La sintaxis de while tiene la siguiente forma:
+
+   while (condición) {
+         .. código
+         .. más código
+   }
+
+* For
+
+.code ejemplos/farh2cel2.c /^int main/,/^}/
+
+* For (2)
+
+La sintaxis de for tiene la siguiente forma:
+
+   for (init ; condición ; incremento) {
+         .. código
+         .. más código
+   }
+
+* Const
+
+.code ejemplos/farh2cel3.c /^#define /,/^}/
+
+* Cat (version 1)
+
+.code ejemplos/cat1.c /^int main/,/^}/
+
+* getchar()
+
+.image support/getchar.png
+
+* Cat (version 2)
+
+.code ejemplos/cat2.c /^int main/,/^}/
+
+* Contar caracteres
+
+.code ejemplos/count1.c /^int main/,/^}/
+
+* Contar lineas
+
+.code ejemplos/count2.c /^int main/,/^}/
+
+* Contar lineas
+
+.image support/asciifull.gif
+
+* Contar palabras
+
+.code ejemplos/count3.c /^int main/,/^}/ HLinit
+
+* Contar palabras
+
+.code ejemplos/count3.c /^  while/,/^  }/ HLinit
+
+* leer enteros... y sumarlos
+
+.code ejemplos/sum.c /^int main/,/^}/
+
+mas general:
+
+  scanf( FORMATO, arg1, arg2, ... , argn);
+
+igual ocurre con printf:
+
+  printf( FORMATO, arg1, arg2, ... , argn);
+
+ante cualquier duda, consule el manual (man 3 printf, man 3 scanf)
+
+* si quisieramos contar digitos?
+
+  if ( c == '1' ) {
+     d1 = d1 + 1;
+  }
+  else if (c == '2') {
+     d2 = d2 + 1;
+  }
+  ...
+
+  printf("1 -> %d\n", d1);
+
+Que otra solución podríamos proponer?
+
+
+* Arreglos al rescate...
+
+.code ejemplos/count_digits.c /^  int ndigit/,/^  }/
+  
+  if ( c == '1' ) {
+      ++ndigit[1];
+  }
+  else if (c == '2') {
+      ++ndigit[2];
+  }
+  ...
+
+Para mostrarlos es mucho más simple
+
+.code ejemplos/count_digits.c /^  \/\/Muestra/,/^  }/
+
+* Se podrá hacer más simple?
+
+.image support/asciifull.gif
+
+* Claro!
+
+Los arreglos nos traen felicidad.
+
+.code ejemplos/count_digits.c /^  while/,/^  }/
+
+si quisieramos ver la frecuencia de todos los caracteres?
+
+* Funciones
+
+Hasta ahora utilizamos algunas, *getchar*, *putchar*, *printf*, *main*.
+
+  tipo-de-retorno nombre-de-la-funcion(declaración de los parametros, si los hay) {
+        [...]
+  }
+
+super simple:
+
+  int cuatro() {
+      return 4;
+  }
+
+  int doble(int x) {
+      return x * 2;
+  }
+
+  int sum(int x, int y) {
+      return x + y;
+  }
+
+
+* Funciones (prototipos)
+
+.code ejemplos/power.c /^int power/,/fin/
+
+* Arreglos de caracteres
+
+TBD
