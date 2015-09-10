@@ -9,9 +9,8 @@ Este es un repositorio donde van a encontrar las diapositivas y los ejemplos de 
 
 Para poder ver online las diapositivas, y el código:
 
-- Clase 1 (Introducción a C) acceder a las [diapositivas](http://go-talks.appspot.com/github.com/ProgramacionLCC/ProgramacionII/lab/c/intro.slide) o al [código](https://github.com/ProgramacionLCC/ProgramacionII/blob/tree/master/lab/c/ejemplos)
+- Clase 1 (Introducción a C) acceder a las [diapositivas](http://go-talks.appspot.com/github.com/ProgramacionLCC/ProgramacionII/lab/c/intro.slide) o al [código](https://github.com/ProgramacionLCC/ProgramacionII/tree/master/lab/c/ejemplos)
 
-https://github.com//
 ### Practicas
 
 - [Practica 2](https://docs.google.com/document/d/160GeigygYQ2K7zbu3A8r_Ru0cy1Ovtr1FpvxZX6AtwM/edit?usp=sharing)
