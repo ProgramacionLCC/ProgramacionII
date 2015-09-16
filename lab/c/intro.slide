@@ -138,6 +138,8 @@ ante cualquier duda, consule el manual (man 3 printf, man 3 scanf)
   ...
 
   printf("1 -> %d\n", d1);
+  printf("2 -> %d\n", d2);
+  ...
 
 Que otra solución podríamos proponer?
 
@@ -197,6 +199,23 @@ super simple:
 
 .code ejemplos/power.c /^int power/,/fin/
 
+
 * Arreglos de caracteres
 
-TBD
+¿Y si queremos devolver la línea más larga del texto ingresado?
+
+    Mientras (haya otra línea L)
+        Si (L es más larga que la más larga actual)
+            (Guardar a L como la más larga actual)
+            (Guardar la longitud de L)    
+    Imprimir la línea más larga actual
+    
+    
+* Arreglos de caracteres (2)
+
+.code ejemplos/longestline.c /^#define/,/fin-main/
+
+
+* Arreglos de caracteres (3)
+
+.code ejemplos/longestline.c /^//fin-main/,/fin-copy/
