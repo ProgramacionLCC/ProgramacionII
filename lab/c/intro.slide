@@ -1,5 +1,5 @@
 Programación 2
-Laboratorio
+Laboratorio: Introducción al lenguaje C
 21 Aug 2015
 Tags: c, shell
 
@@ -16,11 +16,11 @@ Tags: c, shell
 
 .code ejemplos/hello1.c
 
-Como compilarlo?
+Cómo compilarlo?
 
      $ cc ex0.c -o ex0
 
-Como ejecutarlo?
+Cómo ejecutarlo?
 
      $ ./ex0
      Hola mundo!
@@ -29,7 +29,7 @@ Como ejecutarlo?
 
 .code ejemplos/hello2.c
 
-* Tabla de convesión
+* Tabla de conversión
 
   Fahrenheit      Celsius
      0              -17
@@ -72,7 +72,7 @@ La sintaxis de while tiene la siguiente forma:
 
 La sintaxis de for tiene la siguiente forma:
 
-   for (init ; condición ; incremento) {
+   for (inicialización ; condición ; incremento) {
          .. código
          .. más código
    }
@@ -97,11 +97,11 @@ La sintaxis de for tiene la siguiente forma:
 
 .code ejemplos/count1.c /^int main/,/^}/
 
-* Contar lineas
+* Contar líneas
 
 .code ejemplos/count2.c /^int main/,/^}/
 
-* Contar lineas
+* Contar líneas (2)
 
 .image support/asciifull.gif
 
@@ -109,11 +109,11 @@ La sintaxis de for tiene la siguiente forma:
 
 .code ejemplos/count3.c /^int main/,/^}/ HLinit
 
-* Contar palabras
+* Contar palabras (2)
 
 .code ejemplos/count3.c /^  while/,/^  }/ HLinit
 
-* leer enteros... y sumarlos
+* Leer enteros... y sumarlos
 
 .code ejemplos/sum.c /^int main/,/^}/
 
@@ -125,9 +125,9 @@ igual ocurre con printf:
 
   printf( FORMATO, arg1, arg2, ... , argn);
 
-ante cualquier duda, consule el manual (man 3 printf, man 3 scanf)
+ante cualquier duda, consulte el manual (man 3 printf, man 3 scanf)
 
-* si quisieramos contar digitos?
+* Si quisiéramos contar digitos?
 
   if ( c == '1' ) {
      d1 = d1 + 1;
@@ -141,7 +141,7 @@ ante cualquier duda, consule el manual (man 3 printf, man 3 scanf)
   printf("2 -> %d\n", d2);
   ...
 
-Que otra solución podríamos proponer?
+Qué otra solución podríamos proponer?
 
 
 * Arreglos al rescate...
@@ -150,8 +150,7 @@ Que otra solución podríamos proponer?
   
   if ( c == '1' ) {
       ++ndigit[1];
-  }
-  else if (c == '2') {
+  }else if (c == '2') {
       ++ndigit[2];
   }
   ...
@@ -170,7 +169,7 @@ Los arreglos nos traen felicidad.
 
 .code ejemplos/count_digits.c /^  while/,/^  }/
 
-si quisieramos ver la frecuencia de todos los caracteres?
+Tarea: y si quisiéramos ver la frecuencia de todos los caracteres?
 
 * Funciones
 

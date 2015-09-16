@@ -18,10 +18,8 @@ int main() {
 
   }
 
-  //Muestra
+  //Muestra OMIT
   for (i = 0; i < 10; i = i + 1) {
     printf("%d -> %d\n", i, ndigit[i]);
   }
-
-
 }

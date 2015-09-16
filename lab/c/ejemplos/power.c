@@ -23,4 +23,4 @@ int power(int base, int n) {
 
   return p;
 }
-//fin
+//fin-power OMIT
