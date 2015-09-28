@@ -1,0 +1,52 @@
+Programación 2
+Laboratorio: Punteros y otras construcciones en C
+1 Oct 2015
+Tags: c, pointers, structures
+
+* Memoria
+- La memoria de un programa puede verse como una secuencia finita de bytes.
+
+- Cada byte tiene una dirección que lo identifica.
+
+.image support/memory.png
+
+- Un char ocupa 1 byte, un int ocupa 4 bytes y para un arreglo dependerá de su tipo y tamaño.
+.image support/memory2.png
+
+
+
+* Punteros
+- Un puntero es una variable cuyo valor es la dirección de memoria de otra variable.
+.image support/pointer.png
+*b* es una variable entera que contiene el valor 21 y *a* es un puntero que contiene la dirección de *b*.
+
+- Un puntero se declara con el tipo de la variable a la que se apunta seguido de un *.
+
+  int* a;	// a es un puntero a entero
+  
+- El operador unario & devuelve la dirección de memoria de una variable.  
+
+  int b = 21;
+  a = &b;	// a "apunta a" b
+  
+  
+  
+* Punteros (2)
+- El operador unario * se utiliza, además de para declarar punteros, para poder obtener el valor de la variable apuntada. A esto lo llamamos "desreferenciar".
+
+  printf("El valor apuntado por a es %d\n", *a);
+  
+- Otras operaciones:
+  
+  int x = 1, y = 2, z[10];
+  int *ip; 	// ip es un puntero a int
+  ip = &x; 	// ip ahora apunta a x
+  y = *ip; 	// y es ahora 1
+  *ip = 0; 	// x es ahora 0
+  ip = &z[0];  // ip ahora apunta a z[0]
+  
+- Al operador & ya lo habíamos usado para leer valores de la entrada!
+
+  int p;
+  scanf("%d", &p);	// a scanf le pasamos la dirección de p para que pueda modificar su valor
+
