@@ -10,7 +10,7 @@ Este es un repositorio donde van a encontrar las diapositivas y los ejemplos de 
 Para poder ver online las diapositivas, y el código:
 
 - [Introducción a C](http://go-talks.appspot.com/github.com/ProgramacionLCC/ProgramacionII/lab/c/intro.slide)
-- [Punteros y otras construcciones](http://go-talks.appspot.com/github.com/ProgramacionLCC/ProgramacionII/lab/c/pointers_and_more.slide)
+- [Punteros y otras construcciones en C](http://go-talks.appspot.com/github.com/ProgramacionLCC/ProgramacionII/lab/c/pointers_and_more.slide)
 - [Código](https://github.com/ProgramacionLCC/ProgramacionII/tree/master/lab/c/ejemplos)
 
 ### Practicas
