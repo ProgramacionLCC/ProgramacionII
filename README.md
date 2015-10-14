@@ -17,6 +17,7 @@ Para poder ver online las diapositivas, y el código:
 
 - [Practica 2](https://docs.google.com/document/d/160GeigygYQ2K7zbu3A8r_Ru0cy1Ovtr1FpvxZX6AtwM/edit?usp=sharing)
 - [Practica 3](https://docs.google.com/document/d/1p3yXsXtQrVO5lDVIw23txIZP008dnuIiRyg1UESyT6Q/edit?usp=sharing)
+- [Practica 4](https://docs.google.com/document/d/1GGqKmTFuHeC5WxUhwkDOcosey8PHlkMp0tI52-1u708/edit?usp=sharing)
 
 ### Código!
 

@@ -117,4 +117,59 @@ Salida:
   a = a + 1;	// a no es una variable!
 
   
+* Punteros de caracteres
 
+- Una cadena constante, como "Soy una cadena", es un arreglo de caracteres
+
+  printf("Hola mundo\n");  // Se accede a través de un puntero al primer caracter
+- Las siguientes son diferentes:
+
+  char arr[] = "Hola mundo\n";  // Es un arreglo cuyo contenido puede modificarse
+  char *s = "Hola mundo\n";     // Es un puntero a una cadena constante
+  
+- Aunque ambas podrían pasarse a la siguiente función:
+                               
+.code ejemplos/char_pointers.c  /^int my_strlen/,/fin/
+
+
+* Arreglos multidimensionales
+
+- Declaración: 
+
+  int a[3][4];	// 3 es la cant. de filas y 4 la cant. de columnas  
+ 
+- Inicialización:
+
+  a = {
+    {4, 21, 1, 2},
+    {9, 7, 11, 3},
+    {44, 9, 0, -5}
+  };
+  
+  int b[2][2] = {{1,2}, {3,4}};  // Declara e inicializa en una misma línea  
+
+- Acceso a un elemento:
+
+  printf("El valor del arreglo a en la fila i, columna j, es %d\n", a[i][j]);
+  
+  // i puede estar entre 0 y 2; j puede estar entre 0 y 3
+  
+  
+  
+* Arreglos multidimensionales (2)
+
+Ejemplo: obtener el día del año dados año, mes y día del mes
+
+.code ejemplos/arrays_multi.c /^char daytab/,/fin-daytab/
+
+.code ejemplos/arrays_multi.c /^int is_leap/,/fin-is_leap/
+
+.code ejemplos/arrays_multi.c /^int day_of_year/,/fin-day_of_year/
+
+
+
+* Arreglos multidimensionales (3)
+
+Ejemplo: obtener mes y día del mes dados año y día del año
+
+.code ejemplos/arrays_multi.c /^void month_day/,/fin-month_day/
