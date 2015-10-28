@@ -173,3 +173,42 @@ Ejemplo: obtener el día del año dados año, mes y día del mes
 Ejemplo: obtener mes y día del mes dados año y día del año
 
 .code ejemplos/arrays_multi.c /^void month_day/,/fin-month_day/
+
+
+
+* Estructuras
+
+- Permiten agrupar un conjunto de variables para accederlas con un mismo nombre
+- Proporcionan un medio para agrupar información que se relaciona
+- La definición de una estructura forma una plantilla que permite declarar variables de estructura
+
+Ejemplo, las coordenadas de un punto:
+
+.code ejemplos/first_struct.c /^struct /,/fin-punto/
+
+Declarando una variable de tipo Punto e inicializándola:
+
+.code ejemplos/first_struct.c /^// def-punto/,/printf/
+
+
+
+* Estructuras (2)
+
+- Las estructuras se pueden anidar (usar una variable de estructura al definir otra estructura)
+
+.code ejemplos/first_struct.c /^struct Rect/,/fin-rect/
+
+.code ejemplos/first_struct.c /^// def-rect/,/r.b/
+
+
+
+* Estructuras y funciones
+
+- Las estructuras se pasan por valor como parámetros de funciones
+- Para modificar una variable de estructura que se pasa como parámetro se necesita un puntero
+
+.code ejemplos/first_struct.c /^int primerCuadrante/,/fin-subirUno/
+
+.code ejemplos/first_struct.c /^  if/,/subirUno/
+
+
