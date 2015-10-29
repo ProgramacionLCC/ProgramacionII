@@ -19,13 +19,13 @@ int primerCuadrante(struct Punto punto)
 }
 // fin-primerCuadrante OMIT
 
-struct Punto subirUno(struct Punto* punto)
+void subirUno(struct Punto* punto)
 {
     (*punto).y = (*punto).y + 1;
 }
 // fin-subirUno OMIT
 
-struct Punto subirUno2(struct Punto* punto)
+void subirUno2(struct Punto* punto)
 {
   punto->y = punto->y + 1;
 }

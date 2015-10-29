@@ -128,9 +128,7 @@ el comportamiento es indefinido
 
 * Listas enlazadas
 
-Definición. Una lista enlazada es una estructura de datos recursiva que:
- - es vacia (NULL).
- - tiene una referencia a un nodo que tiene una referencia a una lista enlazada.
+*Definición*. Una lista enlazada es una estructura de datos recursiva que o bien es vacia (NULL) o tiene una referencia a un nodo que tiene una referencia a una lista enlazada.
 
 Estructura de un nodo:
 
