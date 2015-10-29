@@ -25,6 +25,11 @@ struct Punto subirUno(struct Punto* punto)
 }
 // fin-subirUno OMIT
 
+struct Punto subirUno2(struct Punto* punto)
+{
+  punto->y = punto->y + 1;
+}
+// fin-subirUno2 OMIT
 
 int main()
 {
@@ -41,9 +46,10 @@ int main()
     printf("El punto p NO está en el primer cuadrante.\n");   
   }
   
-  subirUno(&p);
+  subirUno(&p); 
   printf("Coordenadas del punto p después de aplicar subirUno = (%d,%d)\n", p.x, p.y);
-  
+
+
   // def-rect OMIT
   struct Punto p1, p2;
   p1.x = 4;

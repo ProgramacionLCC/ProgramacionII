@@ -211,4 +211,16 @@ Declarando una variable de tipo Punto e inicializándola:
 
 .code ejemplos/first_struct.c /^  if/,/subirUno/
 
+* Puntero a estructura
 
+
+- Como es muy común utilizar puntero a estucturas, tiene su notación espcial.
+
+
+- En el caso de un puntero a estructura se utiliza '->'
+
+  sp->atributo = 33; // es equivalente a (*sp).atributo = 33;
+
+.code ejemplos/first_struct.c /subirUno2/,/fin-subirUno2/
+
+- La invocación a la función no cambia.
