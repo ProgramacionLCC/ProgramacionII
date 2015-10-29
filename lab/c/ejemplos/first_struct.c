@@ -1,31 +1,31 @@
 #include <stdio.h>
 
-struct Punto{
+struct punto{
     int x;
     int y;
 };
 // fin-punto OMIT
 
-struct Rectangulo{
-    struct Punto a;
-    struct Punto b;
+struct rectangulo {
+    struct punto a;
+    struct punto b;
 };
 // fin-rect OMIT
 
 
-int primerCuadrante(struct Punto punto)
+int primerCuadrante(struct punto punto)
 {
     return punto.x >= 0 && punto.y >= 0;
 }
 // fin-primerCuadrante OMIT
 
-void subirUno(struct Punto* punto)
+void subirUno(struct punto* punto)
 {
     (*punto).y = (*punto).y + 1;
 }
 // fin-subirUno OMIT
 
-void subirUno2(struct Punto* punto)
+void subirUno2(struct punto* punto)
 {
   punto->y = punto->y + 1;
 }
@@ -34,7 +34,7 @@ void subirUno2(struct Punto* punto)
 int main()
 {
   // def-punto OMIT
-  struct Punto p;
+  struct punto p;
   p.x = 2;
   p.y = 3;
   
@@ -49,16 +49,15 @@ int main()
   subirUno(&p); 
   printf("Coordenadas del punto p después de aplicar subirUno = (%d,%d)\n", p.x, p.y);
 
-
   // def-rect OMIT
-  struct Punto p1, p2;
+  struct punto p1, p2;
   p1.x = 4;
   p1.y = 5;
   
   p2.x = 2;
   p2.y = 1;
 
-  struct Rectangulo r;
+  struct rectangulo r;
   r.a = p1;
   r.b = p2;  
   
