@@ -196,7 +196,7 @@ Declarando una variable de tipo Punto e inicializándola:
 
 - Las estructuras se pueden anidar (usar una variable de estructura al definir otra estructura)
 
-.code ejemplos/first_struct.c /^struct Rect/,/fin-rect/
+.code ejemplos/first_struct.c /^struct rect/,/fin-rect/
 
 .code ejemplos/first_struct.c /^// def-rect/,/r.b/
 
