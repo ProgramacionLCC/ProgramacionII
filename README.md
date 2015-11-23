@@ -1,6 +1,5 @@
 # ProgramacionII
 
-
 ## Programación 2 (Laboratorio)
 
 Este es un repositorio donde van a encontrar las diapositivas, ejemplos de código vistos en clases y ejercicios para practicar.
