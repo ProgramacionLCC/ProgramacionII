@@ -22,7 +22,7 @@ Para poder ver online las diapositivas y el código:
 
 ### TP's
 
-- 2015 - Calculadora con notación polaca inversa [link](https://github.com/ProgramacionLCC/ProgramacionII/raw/master/lab/tp/tp2015.zip)
+- [2015 - Calculadora con notación polaca inversa](https://github.com/ProgramacionLCC/ProgramacionII/raw/master/lab/tp/tp2015.zip)
 
 ### Código!
 
